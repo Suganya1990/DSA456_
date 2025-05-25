@@ -179,3 +179,14 @@ class Lab1TestCase(unittest.TestCase):
  
 if __name__ == '__main__':
     unittest.main()
+
+
+
+# What did you like/not like about Python
+    #  I appreciate Python for its readability and intuitiveness. I also like that it handles garbage collection automatically, which simplifies memory management. Additionally, the built-in functions and extensive libraries are great assets.
+
+# Was there anything that behaved differently than you expected in Python?
+    #When I first started using Python, I found it a bit challenging to grasp some of its concepts. For instance, when creating a loop, I had to use the `range` function to iterate through the values of an array. Although they were mainly syntax differences compared to other programming languages, the learning curve wasn't too steep. 
+
+# Based on what you wrote in your lab, write something about the similarities and differences between Python and C/C++ and how that affects how you write your program.
+    #With Python, there is less code to write in order to make a function work. For example, to print "Hello World," I only need to write `print("Hello World")`. In contrast, doing the same in C++ involves a lot more syntax to accomplish a simple "Hello World" operation.
