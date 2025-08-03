@@ -7,9 +7,10 @@ def run_tests():
     print("✅ Test 1: Insert")
     assert table.insert("a", 1) == True
     assert table.insert("b", 2) == True
+    assert table.insert("cat", 2) == True
     assert table.insert("c", 3) == True
     assert table.insert("a", 99) == False  # duplicate key
-    assert len(table) == 3
+    assert len(table) == 4
     print("Passed.")
 
     print("✅ Test 2: Search")
@@ -30,7 +31,7 @@ def run_tests():
     assert table.remove("b") == True
     assert table.remove("x") == False
     assert table.search("b") == None
-    assert len(table) == 2
+    assert len(table) == 3
     print("Passed.")
 
     print("✅ Test 5: Rehashing on Delete")
@@ -40,11 +41,11 @@ def run_tests():
     assert table.search("d") == 4
     assert table.search("e") == 5
     assert table.search("f") == 6
-    assert len(table) == 5
+    assert len(table) == 6
     print("Passed.")
 
     print("✅ Test 6: Capacity")
-    cap = table.capacity()
+    cap = table.capacity
     assert cap >= 8
     print(f"Current capacity is {cap}")
     print("Passed.")
